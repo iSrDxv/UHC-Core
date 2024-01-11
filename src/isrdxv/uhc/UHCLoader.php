@@ -18,6 +18,12 @@ class UHCLoader extends PluginBase
 
     public function onEnable(): void
     {
-
+        $this->getLogger()->notice("==========================");
+        $this->getLogger()->notice("Plugin created by: " . implode(",", $this->getDescription()->getAuthors()));
+        $this->getLogger()->notice("Version of plugin: " . $this->getDescription()->getVersion());
+        $this->getLogger()->notice("Description: " . $this->getDescription()->getDescription());
+        $this->getLogger()->notice("Prefix: " . $this->getDescription()->getPrefix());
+        $this->getLogger()->notice("API: " . implode(" ", $this->getDescription()->getCompatibleApis()));
+        $this->getLogger()->notice("==========================");
     }
 }
