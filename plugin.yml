@@ -1,0 +1,9 @@
+name: UHC
+load: "STARTUP"
+author: iSrDxv
+version: 0.0.0
+main: isrdxv\uhc\UHCLoader
+api: 5.0.0
+prefix: "UHC-Core"
+description: "A uhc plugin for pocketmine"
+website: "https://github.com/iSrDxv/UHC-Core"
