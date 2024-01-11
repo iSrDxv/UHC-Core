@@ -1,3 +1,5 @@
 {
-    "php.pocketMinePath": "C:\\Users\\Usuario\\Documents\\FenixZoneSAMP\\PocketMine-MP-5.9.0\\src"
+    "intelephense.environment.includePaths": [
+        "C:\\Users\\Usuario\\Documents\\FenixZoneSAMP\\PocketMine-MP-5.0.0"
+    ]
 }

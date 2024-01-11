@@ -13,7 +13,7 @@ class UHCLoader extends PluginBase
 
     public function onLoad(): void
     {
-        //self::setInstance($this);
+        self::setInstance($this);
     }
 
     public function onEnable(): void
