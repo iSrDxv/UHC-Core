@@ -6,5 +6,10 @@ use pocketmine\player\Player;
 
 class Session
 {
-    
+    private Player $player;
+
+    function __construct(PLayer $player)
+    {
+        $this->player = $player;
+    }
 }
