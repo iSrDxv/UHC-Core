@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace isrdxv\uhc;
+namespace isrdxv\uhc\task;
 
 use isrdxv\uhc\UHCLoader;
 
@@ -12,6 +12,9 @@ use pocketmine\scheduler\{
 };
 use pocketmine\utils\SingletonTrait;
 
+/**
+ * I make tasks easier and it registers faster
+ */
 class TaskManager
 {
   use SingletonTrait;
