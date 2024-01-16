@@ -7,6 +7,16 @@ use function gmdate;
 
 class Time
 {
+    public function getTimeToSeconds(int $value): string
+    {
+        return gmdate("i:s", $value);
+    }
+
+    static function getTimeToHour(int $value): string
+    {
+        return gmdate("H:i:s", $value);
+    }
+
     static function getTimeElapsed($time): string 
     {
         $time = is_string($time) ? intval($time) : $time;
