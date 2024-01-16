@@ -1,0 +1,9 @@
+# Server name
+server-name: "&aCositas&bUHC"
+# MOTD
+server-motd: ""
+
+# UHC Configuration
+
+# Maximum players in the game
+max-players: 60

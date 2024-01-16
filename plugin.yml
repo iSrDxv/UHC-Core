@@ -1,7 +1,7 @@
 name: UHC
 load: "STARTUP"
 author: iSrDxv
-version: 0.0.0
+version: 1.0.0
 main: isrdxv\uhc\UHCLoader
 api: 5.0.0
 prefix: "UHC-Core"

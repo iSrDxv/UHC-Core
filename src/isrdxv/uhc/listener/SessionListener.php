@@ -9,7 +9,8 @@ use pocketmine\event\Listener;
 use pocketmine\event\player\{
     PlayerJoinEvent,
     PlayerRespawnEvent,
-    PlayerQuitEvent
+    PlayerQuitEvent,
+    PlayerPreLoginEvent
 };
 use pocketmine\utils\TextFormat;
 

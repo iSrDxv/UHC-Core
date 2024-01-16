@@ -3,7 +3,10 @@
 namespace isrdxv\uhc;
 
 use pocketmine\plugin\PluginBase;
-use pocketmine\utils\SingletonTrait;
+use pocketmine\utils\{
+    SingletonTrait,
+    TextFormat
+};
 
 use isrdxv\uhc\task\TaskManager;
 
@@ -19,6 +22,8 @@ class UHCLoader extends PluginBase
     {
         self::setInstance($this);
         $this->taskManager = new TaskManager($this);
+        $this->saveDefaultConfig();
+        $this->getServer()->getNetwork()->setName($this->getConfig()->get("server-motd"));
     }
 
     function onEnable(): void
@@ -37,5 +42,10 @@ class UHCLoader extends PluginBase
         $this->getLogger()->notice("==========================");
         $this->getLogger()->notice("Plugin DIsabled!!");
         $this->getLogger()->notice("==========================");
+    }
+
+    function getTaskManager(): TaskManager
+    {
+        return $this->taskManager;
     }
 }
